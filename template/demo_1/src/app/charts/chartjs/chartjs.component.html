@@ -1,0 +1,73 @@
+<div class="az-content">
+  <div class="container">
+    <app-components-sidebar></app-components-sidebar>
+    <div class="az-content-body pd-lg-l-40 d-flex flex-column">
+      <div class="az-content-breadcrumb">
+        <span>Components</span>
+        <span>Charts</span>
+        <span>ChartJS Charts</span>
+      </div>
+      <h2 class="az-content-title">ChartJS Charts</h2>
+
+      <div class="az-content-label mg-b-5">Bar Chart</div>
+      <p class="mg-b-20">Below is the basic bar chart example.</p>
+
+      <div class="row row-sm">
+        <div class="col-sm-8 col-md-6">
+          <div class="az-content-label az-content-label-sm mg-b-15">Solid Color</div>
+          <canvas baseChart [chartType]="'bar'" [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [colors]="barChartColors"></canvas>
+        </div><!-- col-6 -->
+        <div class="col-sm-8 col-md-6  mg-t-20 mg-md-t-0">
+          <div class="az-content-label az-content-label-sm mg-b-15">With Transparency</div>
+          <canvas baseChart [chartType]="'bar'" [datasets]="barChartData2" [labels]="barChartLabels" [options]="barChartOptions" [colors]="barChartColors2"></canvas>
+        </div><!-- col-6 -->
+      </div><!-- row -->
+
+      <hr class="mg-y-30">
+
+      <div class="az-content-label mg-b-5">Horizontal Bar Chart</div>
+      <p class="mg-b-20">Below is the horizontal bar chart example.</p>
+
+      <div class="row row-sm">
+        <div class="col-sm-8 col-md-6">
+          <canvas baseChart [chartType]="'horizontalBar'" [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [colors]="barChartColors3"></canvas>
+        </div><!-- col-6 -->
+        <div class="col-sm-8 col-md-6 mg-t-20 mg-md-t-0">
+          <canvas baseChart [chartType]="'horizontalBar'" [datasets]="barChartData3" [labels]="barChartLabels" [options]="barChartOptions" [colors]="barChartColors4"></canvas>
+        </div><!-- col-6 -->
+      </div><!-- row -->
+
+      <hr class="mg-y-30">
+
+      <div class="row row-sm">
+        <div class="col-sm-8 col-md-6">
+          <div class="az-content-label mg-b-5">Line Chart</div>
+          <p class="mg-b-20">Below is the basic line chart example.</p>
+          <canvas baseChart [chartType]="'line'" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"></canvas>
+        </div><!-- col-6 -->
+        <div class="col-sm-8 col-md-6 mg-t-20 mg-md-t-0">
+          <div class="az-content-label mg-b-5">Area Chart</div>
+          <p class="mg-b-20">Below is the basic area chart example.</p>
+          <canvas baseChart [chartType]="'line'" [datasets]="lineChartData2" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors2"></canvas>
+        </div><!-- col-6 -->
+      </div><!-- row -->
+
+      <hr class="mg-y-30">
+
+      <div class="az-content-label mg-b-5">Pie &amp; Donut Chart</div>
+      <p class="mg-b-20">Below are an example of data in a pie and donut chart.</p>
+
+      <div class="d-md-flex">
+        <div class="">
+          <canvas baseChart [chartType]="'pie'" [datasets]="doughnutPieChartData" [labels]="doughnutPieChartLabels" [options]="doughnutPieChartOptions" [colors]="doughnutPieChartColors"></canvas>
+        </div>
+        <div>
+          <canvas baseChart [chartType]="'doughnut'" [datasets]="doughnutPieChartData" [labels]="doughnutPieChartLabels" [options]="doughnutPieChartOptions" [colors]="doughnutPieChartColors"></canvas>
+        </div>
+      </div>
+
+      <div class="ht-40"></div>
+      
+    </div><!-- az-content-body -->
+  </div><!-- container -->
+</div><!-- az-content -->

@@ -1,0 +1,114 @@
+<div class="az-content">
+  <div class="container">
+    <app-components-sidebar></app-components-sidebar>
+    <div class="az-content-body pd-lg-l-40 d-flex flex-column">
+      <div class="az-content-breadcrumb">
+        <span>Components</span>
+        <span>UI Elements</span>
+        <span>Dropdown</span>
+      </div>
+      <h2 class="az-content-title">Dropdown</h2>
+
+      <div class="az-content-label mg-b-5">Basic Example</div>
+      <p class="mg-b-20">Wrap the dropdown’s toggle (your button or link) and the dropdown menu within .dropdown, or another element that declares position relative. Dropdowns can be triggered from link or button elements to better fit your potential needs.</p>
+
+      <div ngbDropdown>
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" ngbDropdownToggle>
+          Dropdown Menu
+        </button>
+        <div class="dropdown-menu tx-13" ngbDropdownMenu aria-labelledby="dropdownMenu">
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Action</a>
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Another action</a>
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Something else here</a>
+        </div>
+      </div>
+
+      <hr class="mg-y-40">
+
+      <div class="az-content-label mg-b-5">Dropup</div>
+      <p class="mg-b-20">Trigger dropdown menus above elements by adding dropup class to the parent element.</p>
+
+      <div ngbDropdown placement="top-right">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropupMenu" ngbDropdownToggle>
+          Dropup Menu
+        </button>
+        <div class="dropdown-menu tx-13" ngbDropdownMenu aria-labelledby="dropupMenu">
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Action</a>
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Another action</a>
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Something else here</a>
+        </div>
+      </div>
+
+      <hr class="mg-y-40">
+
+      <div class="az-content-label mg-b-5">Active Menu Item</div>
+      <p class="mg-b-20">Add active class to items in the dropdown to style them as active.</p>
+
+      <div class="dropdown" ngbDropdown>
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="activeMenuItem" ngbDropdownToggle>
+          Dropdown Menu
+        </button>
+        <div class="dropdown-menu tx-13" ngbDropdownMenu aria-labelledby="activeMenuItem">
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Action</a>
+          <a class="dropdown-item active" href="#" (click)="$event.preventDefault()">Another action</a>
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Something else here</a>
+        </div>
+      </div>
+
+      <hr class="mg-y-40">
+
+      <div class="az-content-label mg-b-5">Disabled Menu Item</div>
+      <p class="mg-b-20">Add disabled class to items in the dropdown to style them as disabled.</p>
+
+      <div class="dropdown" ngbDropdown>
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="disableMenuItem" ngbDropdownToggle>
+          Dropdown Menu
+        </button>
+        <div class="dropdown-menu tx-13" ngbDropdownMenu aria-labelledby="disableMenuItem">
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Action</a>
+          <a class="dropdown-item disabled" href="#" (click)="$event.preventDefault()">Another action</a>
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Something else here</a>
+        </div>
+      </div>
+
+      <hr class="mg-y-40">
+
+      <div class="az-content-label mg-b-5">Dropdown Header</div>
+      <p class="mg-b-20">Add a header to label sections of actions in any dropdown menu.</p>
+
+      <div class="dropdown" ngbDropdown>
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownHeader" ngbDropdownToggle>
+          Dropdown Menu
+        </button>
+        <div class="dropdown-menu tx-13" ngbDropdownMenu aria-labelledby="dropdownHeader">
+          <h6 class="dropdown-header tx-uppercase tx-11 tx-bold tx-inverse tx-spacing-1">Dropdown header</h6>
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Action</a>
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Another action</a>
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Something else here</a>
+        </div>
+      </div>
+
+      <hr class="mg-y-40">
+
+      <div class="az-content-label mg-b-5">Dropdown Divider</div>
+      <p class="mg-b-20">Separate groups of related menu items with a divider.</p>
+
+      <div class="dropdown" ngbDropdown>
+        <button class="btn btn-secondary dropdown-toggle" type="button" ngbDropdownToggle>
+          Dropdown Menu
+        </button>
+        <div class="dropdown-menu tx-13" ngbDropdownMenu>
+          <h6 class="dropdown-header tx-uppercase tx-11 tx-bold tx-inverse tx-spacing-1">Dropdown header</h6>
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Action</a>
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Another action</a>
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#" (click)="$event.preventDefault()">Separated link</a>
+        </div>
+      </div>
+
+      <div class="ht-40"></div>
+
+    </div><!-- az-content-body -->
+  </div><!-- container -->
+</div><!-- az-content -->

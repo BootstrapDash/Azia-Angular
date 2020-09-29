@@ -1,0 +1,333 @@
+<div class="az-content">
+  <div class="container">
+    <app-components-sidebar></app-components-sidebar>
+    <div class="az-content-body pd-lg-l-40 d-flex flex-column">
+      <div class="az-content-breadcrumb">
+        <span>Components</span>
+        <span>Forms</span>
+        <span>Form Elements</span>
+      </div>
+      <h2 class="az-content-title">Form Elements</h2>
+
+      <div class="az-content-label mg-b-5">Form Input &amp; Textarea</div>
+      <p class="mg-b-20">A basic form control input and textarea with disabled and readonly mode.</p>
+
+      <div class="row row-sm"> 
+        <div class="col-lg">
+          <input class="form-control" placeholder="Input box" type="text">
+        </div><!-- col -->
+        <div class="col-lg mg-t-10 mg-lg-t-0">
+          <input class="form-control" placeholder="Input box (readonly)" readonly="" type="text">
+        </div><!-- col -->
+        <div class="col-lg mg-t-10 mg-lg-t-0">
+          <input class="form-control" placeholder="Input box (disabled)" disabled="" type="text">
+        </div><!-- col -->
+      </div><!-- row -->
+
+      <div class="row row-sm mg-t-20">
+        <div class="col-lg">
+          <textarea rows="3" class="form-control" placeholder="Textarea"></textarea>
+        </div><!-- col -->
+        <div class="col-lg mg-t-10 mg-lg-t-0">
+          <textarea rows="3" class="form-control" placeholder="Textarea (readonly)" readonly></textarea>
+        </div><!-- col -->
+        <div class="col-lg mg-t-10 mg-lg-t-0">
+          <textarea rows="3" class="form-control" placeholder="Texarea (disabled)" disabled></textarea>
+        </div><!-- col -->
+      </div><!-- row -->
+
+      <hr class="mg-y-30">
+
+      <div class="az-content-label mg-b-5">Valid State Input</div>
+      <p class="mg-b-20">A form control with success, warning and error state.</p>
+
+      <form class="needs-validation was-validated">
+        <div class="row row-sm">
+          <div class="col-lg-4">
+            <div class="form-group has-success mg-b-0">
+              <input class="form-control" placeholder="Input box (success state)" value="This is input" required type="text">
+              <textarea rows="3" class="form-control mg-t-20" placeholder="Textarea (success state)" required>This is textarea</textarea>
+            </div><!-- form-group -->
+          </div><!-- col -->
+          <div class="col-lg-4 mg-t-20 mg-lg-t-0">
+            <div class="form-group has-danger mg-b-0">
+              <input class="form-control" placeholder="Input box (invalid state)" type="text" required>
+              <textarea rows="3" class="form-control mg-t-20" placeholder="Textarea (invalid state)" required></textarea>
+            </div><!-- form-group -->
+          </div><!-- col -->
+        </div><!-- row -->
+      </form>
+
+      <hr class="mg-y-30">
+
+      <div class="az-content-label mg-b-5">Custom Checkboxes &amp; Radios</div>
+      <p class="mg-b-20">A custom styled checkboxes and radios.</p>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <label class="ckbox">
+            <input type="checkbox"><span>Checkbox Unchecked</span>
+          </label>
+        </div><!-- col-3 -->
+        <div class="col-lg-3 mg-t-20 mg-lg-t-0">
+          <label class="ckbox">
+            <input type="checkbox" checked><span>Checkbox Checked</span>
+          </label>
+        </div><!-- col-3 -->
+        <div class="col-lg-3 mg-t-20 mg-lg-t-0">
+          <label class="ckbox">
+            <input type="checkbox" disabled><span>Checkbox Disabled</span>
+          </label>
+        </div><!-- col-3 -->
+      </div><!-- row -->
+
+      <div class="row mg-t-10">
+        <div class="col-lg-3">
+          <label class="rdiobox">
+            <input name="rdio" type="radio">
+            <span>Radio Unchecked</span>
+          </label>
+        </div><!-- col-3 -->
+        <div class="col-lg-3 mg-t-20 mg-lg-t-0">
+          <label class="rdiobox">
+            <input name="rdio" type="radio" checked>
+            <span>Radio Checked</span>
+          </label>
+        </div><!-- col-3 -->
+        <div class="col-lg-3 mg-t-20 mg-lg-t-0">
+          <label class="rdiobox">
+            <input name="rdio" type="radio" disabled>
+            <span>Radio Disabled</span>
+          </label>
+        </div><!-- col-3 -->
+      </div><!-- row -->
+
+      <hr class="mg-y-30">
+
+      <div class="az-content-label mg-b-5">File Browser</div>
+      <p class="mg-b-20">A custom styled file browser.</p>
+
+      <div class="row row-sm">
+        <div class="col-sm-7 col-md-6 col-lg-4">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+          </div>
+        </div><!-- col -->
+      </div><!-- row -->
+
+      <hr class="mg-y-30">
+
+      <div class="az-content-label mg-b-5">Toggle Switches</div>
+      <p class="mg-b-20">A custom made toggles with jquery support.</p>
+
+      <div class="az-toggle-group-demo">
+        <div class="az-toggle" (click)="switch1=!switch1" [ngClass]="switch1 ? 'on' : null"><span></span></div>
+        <div class="az-toggle az-toggle-secondary" (click)="switch2=!switch2" [ngClass]="switch2 ? 'on' : null"><span></span></div>
+        <div class="az-toggle az-toggle-success" (click)="switch3=!switch3" [ngClass]="switch3 ? 'on' : null"><span></span></div>
+        <div class="az-toggle az-toggle-dark" (click)="switch4=!switch4" [ngClass]="switch4 ? 'on' : null"><span></span></div>
+      </div>
+
+      <div class="az-toggle-group-demo mg-t-10">
+        <div class="az-toggle" (click)="switch5=!switch5" [ngClass]="switch5 ? null : 'on' "><span></span></div>
+        <div class="az-toggle az-toggle-secondary" (click)="switch6=!switch6" [ngClass]="switch6 ? null : 'on' "><span></span></div>
+        <div class="az-toggle az-toggle-success" (click)="switch7=!switch7" [ngClass]="switch7 ? null : 'on' "><span></span></div>
+        <div class="az-toggle az-toggle-dark" (click)="switch8=!switch8" [ngClass]="switch8 ? null : 'on' "><span></span></div>
+      </div>
+
+      <table class="table az-table-reference">
+        <thead>
+          <tr>
+            <th class="wd-40p">Class Reference</th>
+            <th class="wd-60p">Values</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="pd-0 bg-transparent">class="az-toggle az-toggle-[value]"</code></td>
+            <td>secondary | success | dark</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="mg-y-30">
+
+      <div class="az-content-label mg-b-5">Input Groups</div>
+      <p class="mg-b-20">Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs.</p>
+
+      <div class="row row-sm">
+        <div class="col-lg-4">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div><!-- input-group -->
+        </div><!-- col -->
+        <div class="col-lg-4">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+          </div>
+        </div><!-- col -->
+        <div class="col-lg-4">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <div class="input-group-append">
+              <span class="input-group-text">.00</span>
+            </div>
+          </div><!-- input-group -->
+        </div><!-- col -->
+      </div><!-- row -->
+
+      <div class="row row-sm">
+        <div class="col-lg-4">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <label class="ckbox wd-16 mg-b-0">
+                  <input type="checkbox" class="mg-0"><span></span>
+                </label>
+              </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Text input with checkbox">
+          </div><!-- input-group -->
+        </div><!-- col-4 -->
+        <div class="col-lg-4 mg-t-20 mg-lg-t-0">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <label class="rdiobox wd-16 mg-b-0">
+                  <input type="radio"><span></span>
+                </label>
+              </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Text input with radiobox">
+          </div><!-- input-group -->
+        </div><!-- col-4 -->
+        <div class="col-lg-4 mg-t-20 mg-lg-t-0">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+            </span>
+          </div><!-- input-group -->
+        </div><!-- col-4 -->
+      </div><!-- row -->
+
+      <hr class="mg-y-30">
+
+      <div class="az-content-label mg-b-5">Color Picker</div>
+      <p class="mg-b-20">A simple component to select color in the same way you select color in Adobe Photoshop.</p>
+      <input [(colorPicker)]="color1" 
+        [style.background]="color1" 
+        class="wd-40"
+        [cpCancelButton]="true"
+        [cpCancelButtonClass]= "'btn btn-primary btn-xs'"
+        [cpOKButton]="true"
+        [cpSaveClickOutside]="false"
+        [cpOKButtonClass]= "'btn btn-primary btn-xs'"/>
+
+      <p class="mg-t-40 mg-b-10">With preset colors:</p>
+      <input [(colorPicker)]="color2" 
+      [style.background]="color2" 
+      class="wd-40"
+      [cpCancelButton]="true"
+      [cpCancelButtonClass]= "'btn btn-primary btn-xs'"
+      [cpOKButton]="true"
+      [cpSaveClickOutside]="false"
+      [cpOKButtonClass]= "'btn btn-primary btn-xs'"
+      [cpPresetColors]="['#fff', '#000', '#2889e9', '#e920e9', '#fff500', 'rgb(236,64,64)']"/>
+
+      <hr class="mg-y-30">
+
+      <div class="az-content-label mg-b-5">jQuery UI Date Picker</div>
+      <p class="mg-b-20">The datepicker is tied to a standard form input field. Click on the input to open an interactive calendar in a small overlay. If a date is chosen, feedback is shown as the input's value.</p>
+
+      <div class="wd-200 mg-b-20">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text" (click)="d.toggle()">
+              <i class="typcn typcn-calendar-outline tx-24 lh--9 op-6"></i>
+            </div>
+          </div>
+          <input class="form-control" placeholder="yyyy-mm-dd"
+              name="dp" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()">
+        </div>
+      </div><!-- wd-200 -->
+
+      <p>Set the numberOfMonths option to an integer of 2 or more to show multiple months in a single datepicker.</p>
+
+      <div class="wd-200 mg-b-20">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text" (click)="d2.toggle()">
+              <i class="typcn typcn-calendar-outline tx-24 lh--9 op-6"></i>
+            </div>
+          </div>
+          <input type="text" class="form-control" placeholder="MM/DD/YYYY" name="dp" [displayMonths]="displayMonths" [navigation]="navigation" [outsideDays]="outsideDays"
+          [showWeekNumbers]="showWeekNumbers" ngbDatepicker #d2="ngbDatepicker" (click)="d2.toggle()">
+        </div>
+      </div><!-- wd-200 -->
+
+      <p>Display the datepicker embedded in the page instead of in an overlay.</p>
+
+      <ngb-datepicker #dp (navigate)="date = $event.next" [style.maxWidth]="'234px'"></ngb-datepicker>
+
+      <hr class="mg-y-30">
+
+      <div class="az-content-label mg-b-5">Timepicker</div>
+      <p class="mg-b-20">A simple component to select time.</p>
+
+      <div class="wd-250 mg-b-20">
+        <ngb-timepicker [(ngModel)]="time" [meridian]="meridian"></ngb-timepicker>
+      </div>
+
+      <hr class="mg-y-30">
+
+      <div class="az-content-label mg-b-5">Select<span class="tx-sserif">2</span> Box</div>
+      <p class="mg-b-20">Select2 gives you a customizable select box with support for searching, tagging, remote data sets, infinite scrolling, and many other highly used options.</p>
+
+      <div class="row row-sm mg-b-20">
+        <div class="col-lg-4">
+          <p class="mg-b-10">Single Select</p>
+          <ng-select [items]="variableName"
+            bindLabel="name"
+            autofocus
+            bindValue="id"
+            [(ngModel)]="selectedPersonId">
+          </ng-select>
+        </div><!-- col-4 -->
+        <div class="col-lg-4 mg-t-20 mg-lg-t-0">
+          <p class="mg-b-10">Multi Select</p>
+          <ng-select [items]="variableName"
+            bindLabel="name"
+            autofocus
+            bindValue="id"
+            [(ngModel)]="selectedPersonIdDisabled"
+            [disabled]="true">
+          </ng-select>
+        </div><!-- col-4 -->
+        <div class="col-lg-4 mg-t-20 mg-lg-t-0">
+          <p class="mg-b-10">Multi Select</p>
+          <ng-select [items]="variableName"
+            bindLabel="name"
+            autofocus
+            bindValue="id"
+            [(ngModel)]="selectedPersonIdMultiple"
+            [multiple]="true">
+          </ng-select>
+        </div><!-- col-4 -->
+      </div><!-- row -->
+
+
+      <div class="ht-40"></div>
+
+    </div><!-- az-content-body -->
+  </div><!-- container -->
+</div><!-- az-content -->
