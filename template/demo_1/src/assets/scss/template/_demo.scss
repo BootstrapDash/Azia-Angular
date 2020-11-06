@@ -708,3 +708,55 @@
 .demo-static-toast {
   .toast { opacity: 1; }
 }
+.purchase-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+  padding: 15px 150px;
+  display: flex;
+  @include media-breakpoint-down(md) { 
+    padding: 15px 20px; 
+    display: block;
+  }
+
+
+  .btn {
+    margin-right: 20px;
+    font-weight: 500;
+    color: #fff;
+    &.purchase-button {
+      color: #fff;
+      border: none;
+      line-height: 1;
+      vertical-align: middle;
+      min-height: auto;
+    }
+  }
+
+  p {
+    margin-bottom: auto;
+    margin-top: auto;
+    color: #1c273c;
+    font-weight: 400;
+    vertical-align: middle;
+    line-height: 1;
+    @include media-breakpoint-down(md) { 
+      margin-bottom: 10px;
+    }
+  }
+
+  i {
+    vertical-align: middle;
+    line-height: 1;
+    margin: auto 0;
+    color: darken(#e4e4e4,20%);
+  }
+}
+.removeProbanner {
+  .purchase-popup {
+    display: none;
+  }
+}
